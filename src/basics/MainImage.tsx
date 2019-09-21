@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const MainImageOuter = styled.div`
   margin-left: auto;
@@ -12,10 +12,10 @@ const MainImageOuter = styled.div`
 `;
 
 const MainImage: React.FC = () => {
-  const src = `${process.env.PUBLIC_URL}/ginpei-1200.png`;
+  const src = `${process.env.PUBLIC_URL}/profile_marie.jpg`;
   return (
     <MainImageOuter className="MainImage">
-      <img src={src} alt=""/>
+      <img src={src} alt="" />
     </MainImageOuter>
   );
 };
