@@ -25,7 +25,7 @@ jobs:
         env:
           CI: true
       - name: Firebase deployment
-         if: github.ref == 'refs/heads/release'
+        if: github.ref == 'refs/heads/release'
         run: |
           npx firebase-tools deploy --token "$FIREBASE_TOKEN"
         env:
