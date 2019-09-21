@@ -16,7 +16,7 @@ const AsideImageOuter = styled.figure`
 const HomePage: React.FC = () => {
   return (
     <DefaultLayout className="HomePage">
-      <h1>Welcome to My Wonderful App!</h1>
+      <h1>Welcome to My Wonderful App!!!</h1>
       <p>
         Hi! My name is Marie Otaki. I write JavaScript. I make web applications.
       </p>
