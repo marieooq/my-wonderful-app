@@ -18,8 +18,7 @@ const HomePage: React.FC = () => {
     <DefaultLayout className="HomePage">
       <h1>Welcome to My Wonderful App!</h1>
       <p>
-        Hi! My name is Ginpei Takanashi. I write JavaScript. I make
-        JapaneseSushi.
+        Hi! My name is Marie Otaki. I write JavaScript. I make JapaneseSushi.
       </p>
       <p>
         →<Link to="/about">About</Link>
