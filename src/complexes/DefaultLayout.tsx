@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const HeaderOuter = styled.div`
   background-color: #036;
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
   return (
     <HeaderOuter>
       <div className="ui-container">
-        <Link to={`${process.env.PUBLIC_URL}/`}>My Great App</Link>
+        <Link to={`${process.env.PUBLIC_URL}/`}>My Wonderful App</Link>
       </div>
     </HeaderOuter>
   );
@@ -37,33 +37,29 @@ const FooterOuter = styled.div`
 const Footer: React.FC = () => {
   return (
     <FooterOuter>
-      <div className="ui-container">
-        Copyright &copy; Ginpei Takanashi
-      </div>
+      <div className="ui-container">Copyright &copy; Marie Otaki</div>
     </FooterOuter>
   );
 };
 
 const MainOuter = styled.div.attrs({
-  className: 'ui-container',
+  className: "ui-container"
 })`
   margin-top: 1rem;
   min-height: 50vh;
 `;
 
-type Prop = React.ComponentPropsWithRef<'div'>;
+type Prop = React.ComponentPropsWithRef<"div">;
 
-const DefaultLayout: React.FC<Prop> = (props) => {
+const DefaultLayout: React.FC<Prop> = props => {
   const { children, ...restProps } = props;
   return (
     <div {...restProps}>
       <Header />
-      <MainOuter>
-        {children}
-      </MainOuter>
-      <Footer/>
+      <MainOuter>{children}</MainOuter>
+      <Footer />
     </div>
   );
-}
+};
 
 export default DefaultLayout;
